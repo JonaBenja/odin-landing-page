@@ -6,11 +6,11 @@ body {
 }
 
 .low-contrast {
-    color: #7a7a7a;
+    color: #a19f9f;
     font-size: 18px;
 }
 
-.high-contrast {
+strong, .high-contrast {
     color: #F9FAF8;
 }
 
@@ -37,7 +37,6 @@ ul {
     margin: 0;
     gap: 20px;
     justify-content: space-evenly;
-
 }
 
 a {
@@ -66,21 +65,26 @@ a {
     padding: 100px 150px;
 }
 
-.placeholder-img {
-    background-color: #6C747D;
-    width: 1000px;
+.hero-section button {
+    border: 2px solid #3882F7;
+}
+
+.hero-left-side {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.hero-right-side {
+    width: 500px;
+    flex: 0 1 auto;
+    height: auto;
 }
 
 .hero-main-text {
     font-size: 48px;
     font-weight: 900;
-}
-
-.hero-sec-text {
-    margin-bottom: 10px;
 }
 
 button {
@@ -91,6 +95,7 @@ button {
     padding: 7px 30px;
     border-radius: 8px;
     cursor: pointer;
+    align-self: flex-end;
 }
 
 .info-section {
@@ -126,17 +131,30 @@ button {
     border-radius: 10px;
     margin-bottom: 10px;
     height: 175px;
+    display: flex;
+}
+
+.info-box img {
+    width: 100%;
+    height: 100%;
+    object-position: left;
+    border-radius: 5px;
 }
 
 .quote-section {
     background-color: #E5E7EB;
-    padding: 100px 285px;
+    padding: 100px 200px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 75px;
 }
 
 .quote-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    flex: 1 1 auto;
+    width: 300px;
 }
 
 .quote {
@@ -152,18 +170,35 @@ button {
 }
 
 .signup-section {
-    background-color: white;
     padding: 50px 200px;
 }
 
 .signup-container {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-container img {
+    flex: 1;
+    width: 700px;
+    height: auto;
+}
+
+
+
+/* This was part of the assignment, 
+but I modified the design after completing 
+the assignment
+
+.signup-container {
     background-color: #3882F7;
-    padding: 50px 0;
+    padding: 50px 50px;
     border-radius: 7px;
     display: flex;
     flex-direction: wrap;
     justify-content: space-evenly;
 }
+
 
 .signup-main-text {
     font-size: 20px;
@@ -181,7 +216,7 @@ button {
     flex-grow: 0;
     align-self: flex-end;
 }
-
+*/
 
 
 
