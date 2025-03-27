@@ -85,6 +85,7 @@ a {
     height: auto;
     object-fit: contain;
     min-width: 100px;
+    border-radius: 5px;
 }
 
 .hero-main-text {
