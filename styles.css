@@ -63,6 +63,8 @@ a {
     display: flex;
     gap: 30px;
     padding: 100px 150px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-section button {
@@ -74,12 +76,15 @@ a {
     flex-direction: column;
     gap: 30px;
     justify-content: space-between;
+    max-width: 500px;
 }
 
 .hero-right-side {
-    width: 500px;
-    flex: 0 1 auto;
+    max-width: 50%;
+    flex: 1 1 100px;
     height: auto;
+    object-fit: contain;
+    min-width: 100px;
 }
 
 .hero-main-text {
